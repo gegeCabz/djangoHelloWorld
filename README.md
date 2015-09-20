@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Django on OpenShift
 ===================
 
@@ -79,3 +80,6 @@ You should be now able to login at:
 =======
 # hello-repo
 >>>>>>> ae0403f0f8b8e28170eece4dc32f5b0a7cc9fd5c
+=======
+# djangohelloworld
+>>>>>>> c5a2bf7eaa7fd89d914c6abab76b5ada0f1d0f62
