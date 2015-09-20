@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Django on OpenShift
 ===================
 
@@ -75,3 +76,6 @@ Use `rhc ssh` to log into python gear and run this command:
 You should be now able to login at:
 
 	http://django-$yournamespace.rhcloud.com/admin/
+=======
+# hello-repo
+>>>>>>> ae0403f0f8b8e28170eece4dc32f5b0a7cc9fd5c
