@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cc52e8e27f36c466e783bd57548c81aaa9506491
 Django on OpenShift
 ===================
 
@@ -78,8 +81,13 @@ You should be now able to login at:
 
 	http://django-$yournamespace.rhcloud.com/admin/
 =======
+<<<<<<< HEAD
+# djangoHelloWorld
+>>>>>>> 71a35718f0d43b9584e220953a15a81a8e031053
+=======
 # hello-repo
 >>>>>>> ae0403f0f8b8e28170eece4dc32f5b0a7cc9fd5c
 =======
 # djangohelloworld
 >>>>>>> c5a2bf7eaa7fd89d914c6abab76b5ada0f1d0f62
+>>>>>>> cc52e8e27f36c466e783bd57548c81aaa9506491
