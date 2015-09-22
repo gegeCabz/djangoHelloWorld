@@ -15,9 +15,20 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf.urls import patterns.url
 from HelloWorld.views import hello
+from HelloWorld import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^HelloWorld/', hello),
+    url(r'^$', views.HelloWorld_list, name='HelloWorld_list'),
+    url(r'^new$', views.HelloWorld_create, name='HelloWorld_new'),
+    url(r'^edit/(?P<pk>\d+)$', views.HelloWorld_update, name='HelloWorld_edit'),
+    url(r'^delete/(?P<pk>\d+)$', views.HelloWorld_delete, namm='HelloWorld_delete'),
+    url(r'^HelloWorld/', include('HelloWorld.urls')),
+    url(r'^$', views.HelloWorldList.as_view(), name='HelloWorld_list'),
+    url(r'^new$', views.HelloWorldCreate.as_view(), name='HelloWorld_new'),
+    url(r'^edit/(?P<pk>\d+)$', views.HelloWorldUpdate.as_view(), name='HelloWorld_edit'),
+    url(r'^delete/(?P<pk>\d+)$', views.HelloWorldDelete.as_view(), name='HelloWorld_delete'),
 ]
