@@ -13,7 +13,6 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls import patterns, url
 from HelloWorld.views import hello
@@ -22,13 +21,12 @@ from HelloWorld import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^HelloWorld/', hello), 
-
-]
-
-urlpatterns = patterns('',
     url(r'^$', views.HelloWorld_list, name='HelloWorld_list'),
     url(r'^new$', views.HelloWorld_create, name='HelloWorld_new'),
     url(r'^edit/(?P<pk>\d+)$', views.HelloWorld_update, name='HelloWorld_edit'),
     url(r'^delete/(?P<pk>\d+)$', views.HelloWorld_delete, name='HelloWorld_delete'),
-)
+
+]
+
+
 
