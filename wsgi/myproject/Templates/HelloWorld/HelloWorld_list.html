@@ -1,0 +1,11 @@
+<h1>HelloWorld</h1>
+<ul>
+    {% for HelloWorld in object_list %}
+    <li>{{ HelloWorld.name }} :
+    <a href="{% url "HelloWorld_edit" HelloWorld.id %}">{{ HelloWorld.ip }} </a>
+    <a href="{% url "HelloWorld_delete" HelloWorld.id %}"> delete </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url "HelloWorld_new" %}">New</a>
