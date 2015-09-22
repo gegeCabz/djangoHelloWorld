@@ -17,12 +17,12 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls import patterns, url
 from HelloWorld.views import hello
-from HelloWorld import HelloWorld_urls
 from HelloWorld import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^HelloWorld/', hello),   
+    url(r'^HelloWorld/', hello), 
+    url(r'^HelloWorld/', include('HelloWorld.urls')),  
 ]
 
 urlpatterns = patterns('',
@@ -30,7 +30,7 @@ urlpatterns = patterns('',
     url(r'^new$', views.HelloWorldCreate.as_view(), name='HelloWorld_new'),
     url(r'^edit/(?P<pk>\d+)$', views.HelloWorldUpdate.as_view(), name='HelloWorld_edit'),
     url(r'^delete/(?P<pk>\d+)$', views.HelloWorldDelete.as_view(), name='HelloWorld_delete'),
-    url(r'^HelloWorld/', include('HelloWorld_urls')),
+    
     )
 
 urlpatterns = patterns('',
