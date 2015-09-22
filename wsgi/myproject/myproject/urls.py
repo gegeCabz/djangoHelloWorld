@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^new$', views.HelloWorld_create, name='HelloWorld_new'),
     url(r'^edit/(?P<pk>\d+)$', views.HelloWorld_update, name='HelloWorld_edit'),
     url(r'^delete/(?P<pk>\d+)$', views.HelloWorld_delete, name='HelloWorld_delete'),
-    url(r'^HelloWorld/', include('HelloWorld.urls')),
+    url(r'^HelloWorld/', include('HelloWorld.url')),
     url(r'^$', views.HelloWorldList.as_view(), name='HelloWorld_list'),
     url(r'^new$', views.HelloWorldCreate.as_view(), name='HelloWorld_new'),
     url(r'^edit/(?P<pk>\d+)$', views.HelloWorldUpdate.as_view(), name='HelloWorld_edit'),
