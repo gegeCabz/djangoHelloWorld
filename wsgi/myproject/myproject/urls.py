@@ -19,12 +19,13 @@ from django.conf.urls import patterns, url
 from HelloWorld.views import hello
 from HelloWorld import views
 
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^HelloWorld/', hello), 
+
+#urlpatterns = [
+    #url(r'^admin/', include(admin.site.urls)),
+    #url(r'^HelloWorld/', hello), 
     
 
-]
+#]
 
 urlpatterns = patterns('',
     url(r'^$', views.HelloWorld_list, name='HelloWorld_list'),
