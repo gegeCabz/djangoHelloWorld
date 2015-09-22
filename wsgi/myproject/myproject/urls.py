@@ -29,7 +29,7 @@ urlpatterns = patterns('',
     url(r'^new$', views.HelloWorldCreate.as_view(), name='HelloWorld_new'),
     url(r'^edit/(?P<pk>\d+)$', views.HelloWorldUpdate.as_view(), name='HelloWorld_edit'),
     url(r'^delete/(?P<pk>\d+)$', views.HelloWorldDelete.as_view(), name='HelloWorld_delete'),
-    url(r'^HelloWorld/', include('HelloWorld.urls')),
+    url(r'^HelloWorld/', include(HelloWorld.urls)),
     )
 
 urlpatterns = patterns('',
