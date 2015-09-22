@@ -17,7 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls import patterns, url
 from HelloWorld.views import hello
-from HelloWorld import HelloWorld.urls
 from HelloWorld import views
 
 urlpatterns = [
